@@ -1,4 +1,3 @@
-import './App.css';
 import Room from './Room';
 
 function App() {
