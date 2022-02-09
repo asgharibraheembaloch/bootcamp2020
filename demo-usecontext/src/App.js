@@ -1,8 +1,9 @@
+import Parent from "./Parent";
 
 function App() {
   return (
     <div>
-      this demo for use context library
+      <Parent value={45}></Parent>
     </div>
   );
 }
