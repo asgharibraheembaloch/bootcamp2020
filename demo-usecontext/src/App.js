@@ -1,9 +1,10 @@
 import Parent from "./Parent";
 
 function App() {
+  
   return (
     <div>
-      <Parent value={45}></Parent>
+      <Parent></Parent>      
     </div>
   );
 }
