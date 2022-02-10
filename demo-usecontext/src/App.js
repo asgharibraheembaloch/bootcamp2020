@@ -1,10 +1,15 @@
+import React, { useState } from 'react'
 import Parent from "./Parent";
+import ValueContext from "./ValueContext";
 
 function App() {
+  let value = useState(48)
   return (
-    <div>
-      <Parent value={45}></Parent>
-    </div>
+    <ValueContext.Provider value={value}>
+      <div>
+        <Parent></Parent>
+      </div>
+    </ValueContext.Provider>
   );
 }
 
