@@ -35,6 +35,7 @@ function prepareCoffee(){
     return promise;
 }
 
+// instead of then we use await
 async function startProcess(){
     try {
         let foodValue = await prepareFood(2);

@@ -3,7 +3,7 @@ console.log("Before Prepare food");
 function prepareFood(data){
     let promise = new Promise(function (resolve, reject) {
         setTimeout(()=>{
-            if(data !== 2){
+            if(data == 2){
                 console.log("Prepare Food");
                 resolve("Food is Ready");
             }
@@ -36,7 +36,7 @@ function prepareCoffee(){
 }
 
 let promise = prepareFood(2);
-//console.log("Promise = ",promise);
+console.log("Promise = ",promise);
 promise.then(function (value){
     console.log("Food is Ready callback = ",value);
     return prepareFrenchToast();
