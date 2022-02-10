@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ValueContext from './ValueContext'
 
-function Child({value}) {
+function Child() {
+  let value = useContext(ValueContext);
   return (
-    <div>this is child component, and this value {value} value come from parent component </div>
+    <div>this is child component, and this value {value} value come from context providor component </div>
   )
 }
 
