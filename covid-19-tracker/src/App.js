@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     const {data, country} = this.state;
     return (
-      <div className={styles.container}>        
+      <div className={styles.container}> unfortunatly recovered data is not available yet       
         <Cards data = {data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Charts data={data} country={country}/>
