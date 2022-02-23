@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #b5d9e8;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.mybird {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 55%;
+}
+
+#cloud1 {
+    position: absolute;
+    width: 100px;
+    top: 20%;
+    left: 80%;
+}
+
+#cloud2 {
+    position: absolute;
+    width:400px;
+    top: 20%;
+    left: 5%;   
+}
+
+#bird1 {
+    position: absolute;
+    width: 200px;
+    top: 60%;
+    left: 55%;  
+}
+
+#bird2 {
+    position: absolute;
+    width: 400px;
+    top: 20%;
+    left: 5%;  
+}
