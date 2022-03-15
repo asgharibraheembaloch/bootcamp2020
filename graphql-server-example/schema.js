@@ -4,12 +4,20 @@ const { gql } = require("apollo-server");
 // that together define the "shape" of queries that are executed against
 // your data.
 const typeDefs = gql`
-# Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
+  # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
   # This "Book" type defines the queryable fields for every book in our data source.
   type Book {
+    id: ID!
     title: String
     author: String
+  }
+  input BookInput {
+    title: String
+    author: String
+  }
+  type Mutation {
+    createBook(input: BookInput): Book
   }
 
   # The "Query" type is special: it lists all of the available queries that
@@ -21,3 +29,7 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
+
+/* type Mutation {
+  createBook(input: Book) : Book
+} */
