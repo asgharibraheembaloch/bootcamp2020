@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import { decrement, increment, incrementByAmount } from '../store/action';
 
 function Counter() {
     //const [counter, setCounter] = useState(0);
@@ -16,16 +17,16 @@ function Counter() {
         <di>
             <button onClick={()=>{
                 //setCounter(counter+1);
-                dispatch({type:"INCREMENT"})
-            }}>increament</button>
+                dispatch(increment())
+            }}>increment</button>
         </di>
         <br/>
         <br/>
         <di>
             <button onClick={()=>{
                 //setCounter(counter-1);
-                dispatch({type:"DECREMENT"})
-            }}>decreament</button>
+                dispatch(decrement())
+            }}>decrement</button>
         </di>
         <br/>
         <br/>
@@ -37,8 +38,8 @@ function Counter() {
             <br/>
             <button onClick={()=>{
                 //setCounter(counter+Number(value))
-                dispatch({type:"INCREMENT_BY_AMOUNT", payload: Number(value)})
-            }}>increament By Value</button>
+                dispatch(incrementByAmount(Number(value)))
+            }}>increment By Value</button>
         </div>
     </div>
   )
