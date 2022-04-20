@@ -3,6 +3,7 @@ import ReactFormikYub from './ReactFormikWithYubSchemaValidation/ReactFormikYub'
 import UserForm from './ReactSimpleForm/UserForm';
 import UserFormWithFormik from './ReactWithFormik/UserFormWithFormik';
 import FormikContextApi from './UserFormWithFormikContextApi/FormikContextApi';
+import UserFormWithMaterialUI from './UserFormWithFormikYup&MaterialUI/UserFormWithMaterialUI';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <ReactFormikYub />
       <br />
       <FormikContextApi />
+      <br />
+      <UserFormWithMaterialUI />
     </div>
   );
 }
